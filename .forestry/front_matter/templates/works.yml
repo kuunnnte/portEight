@@ -5,15 +5,22 @@ fields:
 - type: text
   name: title
   label: title
+  config:
+    required: true
+    min: 5
+    max: 75
 - type: datetime
   name: date
   label: date
+  default: now
+  config:
+    required: true
 - type: file
   name: images
   label: images
-- type: text
-  name: videos
-  label: videos
+  config:
+    maxSize: 5
+  hidden: false
 - type: text
   name: categories
   label: categories
