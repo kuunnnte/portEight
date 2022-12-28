@@ -1,15 +1,17 @@
 ---
-title: "Design Minimalism"
-date: 2022-12-19T14:46:00+07:00
-draft: true
+title: Design Minimalism
+date: 2022-12-19T14:46:00.000+07:00
 images: images/works/minimalist-design.png
-videos:
+videos: 
 categories: design
-keywords: ["design", "minimalism", "layout"]
+keywords:
+- design
+- minimalism
+- layout
 client: Radical Lab
-year: 2021
----
+year: "2021"
 
+---
 Minimalism design is a style that is characterized by simplicity, minimalism, and the use of negative space. This approach to design focuses on creating a clean and uncluttered look, using a minimal number of elements to achieve a maximum impact.
 
 ## Principles
