@@ -1,0 +1,28 @@
+---
+label: Works
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: file
+  name: images
+  label: images
+- type: text
+  name: videos
+  label: videos
+- type: text
+  name: categories
+  label: categories
+- type: list
+  name: keywords
+  label: keywords
+- type: text
+  name: client
+  label: client
+- type: text
+  name: year
+  label: year
