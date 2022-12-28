@@ -1,15 +1,17 @@
 ---
-title: "Sign Cultura"
-date: 2022-12-19T14:46:10+07:00
-draft: true
+title: Sign Cultura
+date: 2022-12-19T14:46:10.000+07:00
 images: images/works/sign-design.png
-videos:
+videos: 
 categories: design
-keywords: ["design", "minimalism", "sign"]
+keywords:
+- design
+- minimalism
+- sign
 client: John Doe
-year: 2019
----
+year: "2019"
 
+---
 ## About
 
 Sign design is an important aspect of visual communication, as it helps to convey information and create a cohesive brand image. Whether you're designing a storefront sign, a wayfinding sign, or a promotional sign, there are a few key considerations to keep in mind to ensure that your design is effective and appealing.
