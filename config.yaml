@@ -1,0 +1,43 @@
+#necessary
+baseURL: /
+languageCode: en-us
+title: John Doe
+description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, voluptates. Deleniti rerum quos, eius mollitia aperiam fuga. Sequi impedit consectetur hic explicabo fugiat possimus laboriosam.
+taxonomies:
+  category: categories
+  tag: tags
+summaryLength: 20
+paginate: 8
+paginatePath:
+
+# menu
+menu:
+  main:
+    - identifier: work
+      title: work
+      name: Work
+      url: /works
+      weight: 10
+    - identifier: about
+      title: about
+      name: About
+      url: /pages/about
+      weight: 20
+    - identifier: blog
+      title: blog
+      name: Blog
+      url: /blogs
+      weight: 30
+    - identifier: contact
+      title: contact
+      name: Contact
+      url: /pages/contact
+      weight: 40
+
+params:
+  workCopy: Experience the benefits of hiring a skilled freelancer for all your creative and professional needs - from website design to copywriting and more.
+  blogCopy: Stay updated with the latest insights, tips, and tricks from our talented team of freelancers through our informative and engaging blog posts.
+  contactCopy: We love to get in touch with new people. Whether you are a potential customer, partner or someone else, we love to hear from you!
+  location: Jl. Pahlawan II Komplek Mercusuar Tower, Sukolilo, Surabaya, Jawa Timur.
+  email: hi@example.com
+  phone: +62 851 6578 9876

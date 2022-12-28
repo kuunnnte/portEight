@@ -1,0 +1,76 @@
+<div class="container-fluid">
+  <footer>
+    <div class="container">
+      <div class="row mt-xl">
+        <div class="col-md-3 text-center">
+          <p>{{ .Site.Title }}</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <p>{{ .Site.Params.location }}</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <p>
+            <a href="mailto:{{ .Site.Params.email }}">
+              {{ .Site.Params.email }}
+            </a>
+          </p>
+        </div>
+        <div class="col-md-3 text-center">
+          <ul class="social-links">
+            <li>
+              <a
+                href="https://www.instagram.com/{{ .Site.Params.instagram }}"
+                target="_blank"
+                class="fa fa-instagram"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.behance.net/{{ .Site.Params.behance }}"
+                target="_blank"
+                class="fa fa-behance"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}"
+                target="_blank"
+                class="fa fa-linkedin"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/{{ .Site.Params.github }}"
+                target="_blank"
+                class="fa fa-github"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://t.me/{{ .Site.Params.telegram }}"
+                target="_blank"
+                class="fa fa-paper-plane"
+              ></a>
+            </li>
+            <li>
+              <a target="_blank" class="fa fa-youtube"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <footer class="bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10 text-center">
+          {{ .Title }} &copy; {{ dateFormat "2006" now }}. All rights reserved.
+          <br />
+          Built by
+          <a href="https://kuunnnte.com" target="_blank">Kun Tegar</a>.
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>

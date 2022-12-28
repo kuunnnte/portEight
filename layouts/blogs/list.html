@@ -1,0 +1,66 @@
+{{ define "main" }}
+<style>
+  .btn-secondary {
+    background-color: transparent;
+  }
+</style>
+<section class="hero text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <h1>Blog</h1>
+        <p>{{ .Site.Params.blogCopy }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="grid-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 classic grid col-4">
+        {{ range (where .Site.Pages "Type" "blogs")}} {{ range
+        .Pages.ByPublishDate.Reverse }}
+        <a href="{{ .Permalink }}" class="item">
+          <div class="caption">
+            <h3>{{ .Title }}</h3>
+            <div class="tag">{{ .Date | time.Format ":date_long" }}</div>
+          </div>
+          <div class="btn btn-secondary">
+            <span class="text">Read article</span
+            ><span class="ion-ios-arrow-thin-right"></span>
+          </div>
+        </a>
+        {{ end }} {{ end }}
+      </div>
+    </div>
+    <!-- <div class="row mt-xl">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="pagination">
+          {{ $paginator := $.Paginator }} {{ if gt $paginator.TotalPages 1 }} {{
+          if $paginator.HasPrev }}
+          <a
+            href="{{ $paginator.Prev.URL }}"
+            class="previous ion-ios-arrow-thin-left pull-left"
+          ></a>
+          {{ end }} {{ range $paginator.Pagers }} {{ if eq . $paginator }}
+          <a href="{{ .URL }}" class="btn btn-default active"
+            >{{ .PageNumber }}</a
+          >
+          {{ else }}
+          <a href="{{ .URL }}" class="btn btn-default active"
+            >{{ .PageNumber }}</a
+          >
+          {{ end }} {{ end }} {{ if $paginator.HasNext }}
+          <a
+            href="{{ $paginator.Next.URL }}"
+            class="next ion-ios-arrow-thin-right pull-right"
+          >
+          </a>
+          {{ end }} {{ end }}
+        </div>
+      </div>
+    </div> -->
+  </div>
+</section>
+{{ end }}

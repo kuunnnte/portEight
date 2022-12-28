@@ -1,0 +1,62 @@
+<header>
+  <div class="container">
+    <div class="col-md-3">
+      <a href="/" class="brand">
+        <img alt="{{ .Title }}" src="{{ "images/logo.svg" | relURL }}" />
+      </a>
+    </div>
+    <div class="col-md-6 text-center">
+      <div class="nav-trigger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="navigation">
+        {{ $currentPage := . }} {{ range .Site.Menus.main }} {{ if .HasChildren
+        }}
+        <li>
+          <a
+            href="#"
+            class='{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}'
+          >
+            {{ .Name }}
+          </a>
+          <ul class="dropdown">
+            {{ range .Children }}
+            <li>
+              <a
+                href="{{ .URL }}"
+                class='{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}'
+              >
+                {{ .Name }}
+              </a>
+            </li>
+            {{ end }}
+          </ul>
+        </li>
+        {{ else }}
+        <li>
+          <a
+            href="{{ .URL }}"
+            class='{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}'
+          >
+            {{ .Name }}
+          </a>
+        </li>
+        {{ end }} {{ end }}
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <form>
+        <div class="search input-group">
+          <input type="text" placeholder="Search for..." class="form-control" />
+          <span class="input-group-btn">
+            <button type="button" class="btn btn-default">
+              <span class="ion-ios-search-strong"></span>
+            </button>
+          </span>
+        </div>
+      </form>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,8 @@
+.row-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+[class*="col-"] {
+  margin-bottom: 30px;
+}

@@ -1,0 +1,59 @@
+{{ define "main" }}
+<div class="container-fluid">
+  <section class="hero text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h1>Work</h1>
+          <p>{{ .Site.Params.workCopy }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="grid-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 mb-0">
+          <a href="#" class="btn btn-default filter-trigger">Filter</a>
+        </div>
+        <div class="col-md-12 grid masonry">
+          {{ range (where .Site.Pages "Section" "works")}} {{ range
+          .Pages.ByPublishDate.Reverse }}
+          <a href="{{ .Permalink }}" class="item {{ .Params.categories }}">
+            <div class="thumb">
+              <img alt="{{ .Title }}" src="{{ .Params.images | absURL }}" />
+            </div>
+            <div class="caption">
+              <h4>{{ .Title }}</h4>
+              <div class="tag">{{ range .Params.keywords }} {{ end }}</div>
+            </div>
+          </a>
+          {{ end }} {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="filter-container">
+    <div class="container">
+      <div class="inner">
+        <ul class="filters">
+          <li>
+            <a href="#" data-filter="item" class="active filter">All</a>
+          </li>
+          {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+          <li>
+            <a
+              href="#"
+              data-filter="{{ .Title }}"
+              class="filter"
+              style="text-transform: capitalize"
+              >{{ .Title }}</a
+            >
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
