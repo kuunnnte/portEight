@@ -1,7 +1,7 @@
 ---
 title: "Software and Sustainability"
 date: 2022-12-24T14:32:53+07:00
-draft: true
+draft: false
 ---
 
 The intersection of software engineering and sustainability is a growing and important field that is focused on using technology and software development to address environmental issues and promote sustainability.

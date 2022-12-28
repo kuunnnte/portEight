@@ -1,7 +1,7 @@
 ---
 title: "Social Media the Negative Effects"
 date: 2022-12-24T14:22:47+07:00
-draft: true
+draft: false
 ---
 
 In recent years, social media has become an increasingly prominent part of young people's lives. According to a report by the Pew Research Center, 95% of teens in the United States use social media, with Instagram, Snapchat, and TikTok being the most popular platforms.

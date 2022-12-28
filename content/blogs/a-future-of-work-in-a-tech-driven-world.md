@@ -1,7 +1,7 @@
 ---
 title: "A Future of Work in a Tech Driven World"
 date: 2022-12-24T14:29:41+07:00
-draft: true
+draft: false
 ---
 
 The future of work is being shaped by technology at an unprecedented rate. From automation and artificial intelligence to remote work and the gig economy, technology is changing the way we work and the skills we need to succeed in the future.

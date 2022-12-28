@@ -1,7 +1,7 @@
 ---
 title: "The Future of Software Engineer"
 date: 2022-12-24T14:25:41+07:00
-draft: true
+draft: false
 ---
 
 The future of software engineering looks bright, with a wide range of exciting technologies and trends on the horizon. As the world becomes increasingly reliant on software and technology, the demand for skilled software engineers is only expected to grow. Here are a few key areas where we can expect to see major developments in the field in the coming years:

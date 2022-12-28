@@ -1,7 +1,7 @@
 ---
 title: "Building a More Equitable Society"
 date: 2022-12-24T14:31:23+07:00
-draft: true
+draft: false
 ---
 
 The role of technology in building a more equitable society is a complex and multifaceted issue. On one hand, technology has the potential to level the playing field and provide access to resources and opportunities that were previously out of reach for many people. On the other hand, it can also perpetuate and exacerbate existing inequalities and raise ethical concerns.

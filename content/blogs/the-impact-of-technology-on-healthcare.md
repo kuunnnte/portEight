@@ -1,7 +1,7 @@
 ---
 title: "Technology on Healthcare"
 date: 2022-12-24T14:26:55+07:00
-draft: true
+draft: false
 ---
 
 The impact of technology on healthcare has been significant and wide-ranging in recent years. From electronic health records and telemedicine to the development of new medical devices and treatments, technology has transformed the way healthcare is delivered and has the potential to improve patient care and outcomes.

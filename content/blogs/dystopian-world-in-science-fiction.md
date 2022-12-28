@@ -1,7 +1,7 @@
 ---
 title: "Dystopian World in Science Fiction"
 date: 2022-12-24T14:28:14+07:00
-draft: true
+draft: false
 ---
 
 Dystopian worlds have long been a staple of science fiction literature and media, offering a cautionary tale of what could happen if society takes a turn for the worse. From George Orwell's 1984 to the Hunger Games series, dystopian worlds in science fiction often serve as a warning about the dangers of totalitarianism, surveillance, and other forms of social control.
