@@ -1,0 +1,62 @@
+{{ define "main" }}
+<section class="hero text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h1>{{ .Title }}</h1>
+        <p>{{ .Summary }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="content">
+  <div class="container">
+    <div class="row mb-xl">
+      <div class="col-md-12">
+        <img src="{{ .Params.images | relURL }}" class="fadein" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-9 mb-3">
+        <div class="row">
+          <div class="col-md-10 mb-0">{{ .Content }}</div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-3 mt-0 order-1">
+        <aside class="p-4">
+          <p class="fs-2 p-0 m-0">
+            <span class="fw-bold">Client :</span> {{ .Params.client }}
+          </p>
+          <p class="fs-2 my-2">
+            <span class="fw-bold">Year :</span> {{ .Params.year }}
+          </p>
+          <p class="fs-2 p-0 m-0" style="text-transform: capitalize">
+            <span class="fw-bold">Categories :</span> {{ .Params.categories }}
+          </p>
+        </aside>
+      </div>
+    </div>
+    <div class="row mt-xl">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="pagination">
+          {{ if .NextInSection }}
+          <a
+            href="{{ .NextInSection.Permalink }}"
+            class="previous ion-ios-arrow-thin-left pull-left"
+          >
+          </a>
+          {{ end }}
+          <a href='{{ "/works" | absURL }}' class="btn btn-default"> Back </a>
+          {{ if .PrevInSection }}
+          <a
+            href=" {{ .PrevInSection.Permalink }} "
+            class="next ion-ios-arrow-thin-right pull-right"
+          >
+          </a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

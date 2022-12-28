@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="content">
+  <div class="container">
+    <div class="col-md-12">
+      <img alt="{{ .Site.Title }}" src="{{ "/images/about/01.jpg" | relURL }}"
+      />
+    </div>
+  </div>
+</section>
+<section class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="box">
+          <h1>Hello, my name is {{ .Site.Title }} and I am open for work</h1>
+          <p>{{ .Content }}</p>
+          <a href="#" class="btn btn-default" style="border: 1px black solid"
+            >Download my resume</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
