@@ -1,15 +1,17 @@
 ---
-title: "Marketing Book"
-date: 2022-12-19T14:04:43+07:00
-draft: true
+title: Marketing Book
+date: 2022-12-19T14:04:43.000+07:00
 images: images/works/marketing-book.png
-videos:
+videos: 
 categories: layout
-keywords: ["book", "layout", "creative"]
+keywords:
+- book
+- layout
+- creative
 client: Matthew Kuma
-year: 2020
----
+year: "2020"
 
+---
 Layouting a marketing book project is a crucial step in the design process. It involves organizing and arranging the text, images, and other elements in a visually appealing and cohesive way. The layout of a marketing book can have a big impact on its overall effectiveness, as it can help to guide the reader through the content and keep their attention engaged.
 
 ## Preparation

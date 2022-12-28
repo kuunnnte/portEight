@@ -1,15 +1,16 @@
 ---
-title: "Historical Books"
-date: 2022-12-19T14:45:43+07:00
-draft: true
+title: Historical Books
+date: 2022-12-19T14:45:43.000+07:00
 images: images/works/historical-books.png
-videos:
+videos: 
 categories: layout
-keywords: ["layout", "historical"]
+keywords:
+- layout
+- historical
 client: Alexander Christie
-year: 2020
----
+year: "2020"
 
+---
 Contemporary art has had a significant influence on design principles in recent years. From graphic design to fashion, contemporary art has helped to shape the way that designers approach their work and has introduced new ideas and styles that have had a lasting impact on the industry.
 
 ## Influence
