@@ -1,15 +1,16 @@
 ---
-title: "Sweater Photography"
-date: 2022-12-19T14:14:06+07:00
-draft: true
+title: Sweater Photography
+date: 2022-12-19T14:14:06.000+07:00
 images: images/works/sweater-photo.png
-videos:
+videos: 
 categories: photography
-keywords: ["sweater", "photography"]
+keywords:
+- sweater
+- photography
 client: Ayakabashi Motto
-year: 2016
----
+year: "2016"
 
+---
 Sweater photography is a crucial aspect of fashion and e-commerce photography, as it helps to showcase the fit, texture, and design of a garment to potential customers. Whether you're a professional photographer or just looking to improve your own sweater photography skills, there are a few key tips and techniques to keep in mind.
 
 ## Preparation
