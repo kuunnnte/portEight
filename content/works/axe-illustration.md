@@ -1,15 +1,17 @@
 ---
-title: "Axe Illustration"
-date: 2022-12-19T13:55:23+07:00
-draft: true
+title: Axe Illustration
+date: 2022-12-19T13:55:23.000+07:00
 images: images/works/axe.png
-videos:
+videos: 
 categories: illustration
-keywords: ["illustration", "merch", "outline"]
+keywords:
+- illustration
+- merch
+- outline
 client: Johnson and Johnson
-year: 2022
----
+year: "2022"
 
+---
 Axe illustration projects are a fun and creative way to add visual interest to any project. Whether you're designing a logo, creating marketing materials, or simply looking for a new hobby, axe illustrations can be a great way to showcase your skills and express your personal style.
 
 ## Approaches
