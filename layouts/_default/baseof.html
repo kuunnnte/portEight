@@ -2,20 +2,51 @@
 <html lang="en">
   <head>
     <title>
-      {{ block "title" . }} {{ .Site.Title }} {{ with .Title }} - {{ . }}{{ end }} {{ end }}
+      {{ if .IsHome }}Home - {{ else }}{{ if .Page.Title }}{{ .Page.Title }} -
+      {{ end }}{{ end }}{{ .Site.Title }}
     </title>
+
     <meta charset="UTF-8" />
+    <meta name="description" content="{{ .Site.Params.description }}" />
+    <meta property="og:url" content="https://porteight.netlify.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="{{ .Site.Title }}" />
+    <meta property="og:description" content="{{ .Site.Params.description }}" />
+    <meta property="og:image" content="{{ .Site.Params.image }}" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="porteight.netlify.app" />
+    <meta property="twitter:url" content="https://porteight.netlify.app/" />
+    <meta name="twitter:title" content="{{ .Site.Title }}" />
+    <meta name="twitter:description" content="{{ .Site.Params.description }}" />
+    <meta name="twitter:image" content="{{ .Site.Params.image }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{{ "css/core.css" | relURL}}" />
-    <link rel="stylesheet" type="text/css" href="{{ "css/styles.css" | relURL}}" />
-    <link rel="stylesheet" type="text/css" href="{{ "css/custom.css" | relURL}}" />
-    <link rel="icon" type="image/png" href="{{ "favicone42d.png" | relURL}}" />
-    <script src="{{ "js/assets/jquery.js" | relURL }}"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href='{{ "css/core.css" | relURL }}'
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href='{{ "css/styles.css" | relURL }}'
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href='{{ "css/custom.css" | relURL }}'
+    />
+    <link rel="icon" type="image/png" href='{{ "favicone42d.png" | relURL}}' />
+    <script src='{{ "js/assets/jquery.js" | relURL }}'></script>
   </head>
   <body class="smooth-transition">
-    {{ partial "navbar.html" . }}
-    {{ block "main" . }}  {{ end }}
-    {{ partial "footer.html" . }}
-    {{ partial "script.html" . }}
+    {{ partial "navbar.html" . }} {{ block "main" . }} {{ end }} {{ partial
+    "footer.html" . }} {{ partial "script.html" . }}
+  </body>
 </html>
