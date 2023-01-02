@@ -30,20 +30,20 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href='{{ "css/core.css" | relURL }}'
+      href="{{ "css/core.css" | relURL }}"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href='{{ "css/styles.css" | relURL }}'
+      href="{{ "css/styles.css" | relURL }}"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href='{{ "css/custom.css" | relURL }}'
+      href="{{ "css/custom.css" | relURL }}"
     />
-    <link rel="icon" type="image/png" href='{{ "favicone42d.png" | relURL}}' />
-    <script src='{{ "js/assets/jquery.js" | relURL }}'></script>
+    <link rel="icon" type="image/png" href="{{ "favicone42d.png" | relURL}}" />
+    <script src="{{ "js/assets/jquery.js" | relURL }}"></script>
   </head>
   <body class="smooth-transition">
     {{ partial "navbar.html" . }} {{ block "main" . }} {{ end }} {{ partial
