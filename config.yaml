@@ -1,7 +1,7 @@
 #necessary
 baseURL: https://porteight.netlify.app/
 languageCode: en-us
-title: John Doe
+title: Porteight
 taxonomies:
   category: categories
   tag: tags
@@ -34,7 +34,7 @@ menu:
       weight: 40
 
 params:
-  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, voluptates. Deleniti rerum quos, eius mollitia aperiam fuga. Sequi impedit consectetur hic explicabo fugiat possimus laboriosam.
+  description: Welcome to my portfolio! I am a digital artist and freelancer, specializing in creating beautiful, unique designs for a variety of clients. With years of experience in the field, I have developed a strong set of skills in graphic design, illustration, and digital art. My passion for art and design shines through in every project I take on, and I strive to deliver exceptional results for my clients every time.
   workCopy: Experience the benefits of hiring a skilled freelancer for all your creative and professional needs - from website design to copywriting and more.
   blogCopy: Stay updated with the latest insights, tips, and tricks from our talented team of freelancers through our informative and engaging blog posts.
   contactCopy: We love to get in touch with new people. Whether you are a potential customer, partner or someone else, we love to hear from you!
