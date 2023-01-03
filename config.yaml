@@ -2,7 +2,6 @@
 baseURL: https://porteight.netlify.app/
 languageCode: en-us
 title: John Doe
-description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, voluptates. Deleniti rerum quos, eius mollitia aperiam fuga. Sequi impedit consectetur hic explicabo fugiat possimus laboriosam.
 taxonomies:
   category: categories
   tag: tags
@@ -35,6 +34,7 @@ menu:
       weight: 40
 
 params:
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, voluptates. Deleniti rerum quos, eius mollitia aperiam fuga. Sequi impedit consectetur hic explicabo fugiat possimus laboriosam.
   workCopy: Experience the benefits of hiring a skilled freelancer for all your creative and professional needs - from website design to copywriting and more.
   blogCopy: Stay updated with the latest insights, tips, and tricks from our talented team of freelancers through our informative and engaging blog posts.
   contactCopy: We love to get in touch with new people. Whether you are a potential customer, partner or someone else, we love to hear from you!
