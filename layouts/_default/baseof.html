@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>
-      {{- if .IsHome -}}Home - {{- else -}}{{- if .Page.Title -}}{{ .Page.Title }} - {{ end }}{{ end }}{{- .Site.Title -}}
+      {{- if .IsHome -}}Home - {{ else }}{{- if .Page.Title -}}{{ .Page.Title }} - {{ end }}{{ end }}{{ .Site.Title }}
     </title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="description" content="{{ if .Summary }} {{- .Summary -}} {{ else }} {{- .Site.Params.Description -}} {{ end }}">
