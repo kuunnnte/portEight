@@ -59,23 +59,6 @@
         {{ end }}
       </div>
     </div>
-    <!-- <div class="row d-none d-md-block">
-      <div class="col-md-12 grid classic col-4">
-        {{ range (where .Site.Pages "Type" "blogs")}} {{ range
-        .Pages.ByPublishDate.Reverse }}
-        <a href="{{ .Permalink }}" class="item {{ .Params.tag }}">
-          <div class="caption">
-            <h3>{{ .Title }}</h3>
-            <div class="tag">{{ .Date | time.Format ":date_long" }}</div>
-          </div>
-          <div class="btn btn-secondary">
-            <span class="text">Read article</span
-            ><span class="ion-ios-arrow-thin-right"></span>
-          </div>
-        </a>
-        {{ end }} {{ end }}
-      </div>
-    </div> -->
     <div class="row d-md-none">
       <div class="grid classic">
         {{ range .Paginator.Pages }}
