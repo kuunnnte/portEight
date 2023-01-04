@@ -15,13 +15,55 @@
     </div>
   </div>
 </section>
+<!-- <section>
+  <div class="uk-container">
+    <div class="uk-grid-match uk-child-width-1-1 uk-child-width-1-4@m" uk-grid>
+      {{ range (where .Site.Pages "Type" "blogs")}} {{ range
+      .Pages.ByPublishDate.Reverse }}
+      <div>
+        <div class="uk-card uk-card-small uk-card-body">
+          <a
+            href="{{ .Permalink }}"
+            class="item uk-link-reset {{ .Params.tag }}"
+          >
+            <div class="caption">
+              <h3 class="uk-text-bold uk-card-title">{{ .Title }}</h3>
+              <div class="tag">{{ .Date | time.Format ":date_long" }}</div>
+            </div>
+            <div class="uk-margin-top btn btn-secondary">
+              <span class="text">Read article</span
+              ><span class="ion-ios-arrow-thin-right"></span>
+            </div>
+          </a>
+        </div>
+      </div>
+      {{ end }} {{ end }}
+    </div>
+  </div>
+</section> -->
 <section class="grid-container">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12 classic grid col-4">
+    <div class="row d-none d-md-block">
+      <div class="col-md-12 grid classic col-4">
+        {{ range .Paginator.Pages }}
+        <a href="{{ .Permalink }}" class="item {{ .Params.tag }}">
+          <div class="caption">
+            <h3>{{ .Title }}</h3>
+            <div class="tag">{{ .Date | time.Format ":date_long" }}</div>
+          </div>
+          <div class="btn btn-secondary">
+            <span class="text">Read article</span
+            ><span class="ion-ios-arrow-thin-right"></span>
+          </div>
+        </a>
+        {{ end }}
+      </div>
+    </div>
+    <!-- <div class="row d-none d-md-block">
+      <div class="col-md-12 grid classic col-4">
         {{ range (where .Site.Pages "Type" "blogs")}} {{ range
         .Pages.ByPublishDate.Reverse }}
-        <a href="{{ .Permalink }}" class="item">
+        <a href="{{ .Permalink }}" class="item {{ .Params.tag }}">
           <div class="caption">
             <h3>{{ .Title }}</h3>
             <div class="tag">{{ .Date | time.Format ":date_long" }}</div>
@@ -33,8 +75,24 @@
         </a>
         {{ end }} {{ end }}
       </div>
+    </div> -->
+    <div class="row d-md-none">
+      <div class="grid classic">
+        {{ range .Paginator.Pages }}
+        <a href="{{ .Permalink }}" class="item {{ .Params.tag }}">
+          <div class="caption">
+            <h3>{{ .Title }}</h3>
+            <div class="tag">{{ .Date | time.Format ":date_long" }}</div>
+          </div>
+          <div class="vcenter btn btn-secondary">
+            <span class="text">Read article</span
+            ><span class="ion-ios-arrow-thin-right"></span>
+          </div>
+        </a>
+        {{ end }}
+      </div>
     </div>
-    <!-- <div class="row mt-xl">
+    <div class="row mt-xl">
       <div class="col-md-6 col-md-offset-3">
         <div class="pagination">
           {{ $paginator := $.Paginator }} {{ if gt $paginator.TotalPages 1 }} {{
@@ -60,7 +118,7 @@
           {{ end }} {{ end }}
         </div>
       </div>
-    </div> -->
+    </div>
   </div>
 </section>
 {{ end }}

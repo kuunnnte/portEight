@@ -52,7 +52,9 @@
     relURL}}" />
   </head>
   <body class="smooth-transition">
-    {{ partial "navbar.html" . }} {{ block "main" . }} {{ end }} {{ partial
-    "footer.html" . }} {{ partial "script.html" . }}
+    <div class="container-fluid">
+      {{ partial "navbar.html" . }} {{ block "main" . }} {{ end }} {{ partial
+      "footer.html" . }} {{ partial "script.html" . }}
+    </div>
   </body>
 </html>
